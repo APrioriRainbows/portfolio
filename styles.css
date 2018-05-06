@@ -50,8 +50,17 @@ table {
 /** END CSS RESET **/
 
 
-/** MAIN STYLES **/
+/** COLORS **/
+
+:root {
+    --pink: #EB596A;
+    --gray: #8AA29E;
+    --darkgray: #686963;
+    --lightblue: #E3F2FD;
+    --cream: #FAFAFA;
+}
     
+/** GENERAL STYLES **/
 body {
     display: flex;
     flex-direction: column;
@@ -63,69 +72,265 @@ body {
 section {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+}
+
+p, ul {
+    font-family: 'Lato', sans-serif;
+    font-align: left;
+    line-height: 1.25;
+    margin-left: 5px;
+}
+
+li {
     padding: 5px;
 }
 
-section:nth-child(odd) {
-    background-color: lightgray;
+h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.75em;
+    color: var(--darkgray);
 }
 
+h3 {
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--lightblue);
+    box-sizing: border-box;
+}
+
+h4 {
+    font-size: 1.25em;
+    margin-top: 5px;
+    text-align: center;
+    color: var(--darkgray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--pink);
+    font-style: italic;
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+
+aside {
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    background-color: var(--lightblue);
+    box-sizing: border-box;
+}
+    
+
 nav {
-    background-color: salmon;
+    background-color: var(--pink);
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+    position: fixed;
 }
 
 .logo-area {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 100%;
+    margin-top: 50px;
+    align-items: center;
 }
 
-nav-item {
+.logo-area h1 {
+    text-align: right;
+
+}
+    
+
+.logo {
+    max-width: 25%;
+    max-height: 50px;
+    margin: 5px;
+}
+
+.nav-item {
     margin: 5px;
     min-width: 40px;
     min-height: 40px;
 }
 
+/**the below CSS allows the header to show up when navigating by section. The padding pushes the fixed nav on top of the header, while the margin styling prevents it from covering the initial element**/
+:target {
+    padding-top: 50px;
+    margin-top: -50px;
+}
 
 .fas {
     font-size: 2.5em;
-    color: white;
+    color: var(--cream);
     max-width: 25%
     
 }
+.fa-star {
+    color: salmon;
+    font-size: 1em;
+    margin-right: 5px;
+}
 
+.break {
+    text-align: center;
+}
 
+img {
+    margin: 0;
+    padding: 0;
+}
 
 #about {
-    flex-direction: row;
+    flex-direction: column;
 }
 
-#skills {
-    flex-direction: row-reverse;
+#about img {
+    width: 100%;
 }
+
 #code {
     padding-bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+}
+
+
+.code-example:nth-child(even){
+    border-bottom: pink solid 2px;
+}
+
+
+#code p {
+    text-align: left;
+
+}
+
+.code-image {
+    display: block;
+    max-width: 75%;
+    margin: 0 auto;
+    
+}
+
+.card {
+    border: 1px solid var(--darkgray);
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80%;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 5px #808080;
+}
+
+.card a {
+    width: 40%;
+    height: 40px;
+    border: var(--gray) solid 2px;
+    background-color: var(--lightblue);
+    text-align: center;
+    border-radius: 5px;
+    margin: 5px auto;
+    line-height: 40px;
+    color: var(--darkgray);
+    font-style: normal;
+}
+
+.job {
+    padding: 7px;
+    margin: 5px 0;
+}
+
+#education img {
+    width:100%;
+
 }
 
 footer {
     width: 100%;
-    background-color: green;
+    background-color: var(--pink);
     display: flex;
     justify-content: space-evenly;
     margin: 0;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 footer a {
     font-size: 2.5em;
-    color: white;
+    color: var(--cream);
 }
 
+/** MEDIA STYLES **/
 
+@media screen and (min-width: 760px) and (max-width: 1024px) {
+    .logo-area, section, footer {
+	width: 85%;
+	margin-left: 15%;
+    }
+    .logo-area {
+	margin-top: 0;
+    }
+    
+    .logo {
+	max-height: 224px;
+    }
+    
+    h1 {
+	font-size: 7em;
+    }
+    h3 {
+	font-size: 5em;
+    }
+    h4 {
+	font-size: 3.5em;
+    }
+    p {
+	font-size: 2em;
+    }
+    
+    .fas {
+	font-size: 4em;
+	text-align: center;
+    }
+    nav {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	flex-direction: column;
+	align-items: center;
+	width: 15%;
+	height: 100%;
+	font-size: 1.5em;
+	justify-content: space-evenly;
+    }
+    nav a {
+	width: 75px;
+	height: 75px;
+    }
+    .break {
+	font-size: 2.5em;
+    }
+    section a {
+	font-size: 2.5em;
+    }
+    footer {
+	font-size: 2.5em;
+	display:inline- block;
+	text-align: center;
+    }
+}
     
