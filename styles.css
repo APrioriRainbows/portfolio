@@ -171,7 +171,7 @@ nav {
     min-height: 40px;
 }
 
-/**the below CSS allows the header to show up when navigating by section. The padding pushes the fixed nav on top of the header, while the margin styling prevents it from covering the initial element**/
+/** The below CSS allows the header to show up when navigating by section. The padding pushes the target element down, and the margin erases the gap between the target element and the previous element. It's based on an answer shown here: https://stackoverflow.com/a/16188689 **/
 :target {
     padding-top: 50px;
     margin-top: -50px;
