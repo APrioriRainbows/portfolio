@@ -291,6 +291,10 @@ footer a {
     .logo-area {
 	margin-top: 0;
     }
+
+    .logo {
+	flex-basis: 250px
+    }
     
     .logo img {
 	max-height: 224px;
@@ -427,6 +431,7 @@ footer a {
     .logo {
 	height: 100%;
 	width: 15%;
+	flex-basis: 100px;
     }
     .logo img {
 	max-width: 100%;
