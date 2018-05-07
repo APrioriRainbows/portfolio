@@ -61,6 +61,10 @@ table {
 }
     
 /** GENERAL STYLES **/
+.flexy {
+    display: flex;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -314,7 +318,11 @@ footer a {
 	align-items: center;
 	width: 15%;
 	height: 100%;
-	font-size: 1.5em;
+    }
+    nav .fas {
+	font-size: 4em;
+	display: block;
+	text-align: center;
 	justify-content: space-evenly;
     }
     nav a {
@@ -324,13 +332,59 @@ footer a {
     .break {
 	font-size: 2.5em;
     }
+    section {
+	align-items: center;
+    }
     section a {
 	font-size: 2.5em;
     }
+    #about {
+	flex-direction: row;
+    }
+    #about .content {
+	margin: auto 5px;
+	max-height: 500px;
+    }
+    .profile-pic {
+	max-width: 42.5%;
+	max-height: 500px;
+    }
+
+    #about p {
+	font-size: 1.5em;
+    }
+    #about h3 {
+	background-color: var(--cream);
+	color: var(--pink);
+	width: 100%;
+    }
+    #education img {
+	max-width: 70%;
+    }
+
+    .card {
+	max-width: 60%;
+    }
+
     footer {
 	font-size: 2.5em;
 	display:inline- block;
 	text-align: center;
+	background-color: var(--lightblue);
     }
+    footer .fab {
+	color: var(--gray);
+    }
+    aside {
+	font-size: 2.25em;
+    }
+    ul {
+	font-size: 2em;
+    }
+    :target {
+	padding-top: 50px;
+	margin-top: -50px;
+    }
+
 }
     
