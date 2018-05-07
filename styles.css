@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -59,8 +59,9 @@ table {
     --lightblue: #E3F2FD;
     --cream: #FAFAFA;
 }
-    
+
 /** GENERAL STYLES **/
+
 .flexy {
     display: flex;
 }
@@ -110,7 +111,7 @@ h4 {
     font-size: 1.25em;
     margin-top: 5px;
     text-align: center;
-    color: var(--darkgray);
+    color: var(--gray);
 }
 
 a {
@@ -131,7 +132,7 @@ aside {
     background-color: var(--lightblue);
     box-sizing: border-box;
 }
-    
+
 
 nav {
     background-color: var(--pink);
@@ -179,7 +180,7 @@ nav {
 .fas {
     font-size: 2.5em;
     color: var(--cream);
-    
+
 }
 .fa-star {
     color: salmon;
@@ -227,7 +228,7 @@ img {
     display: block;
     max-width: 75%;
     margin: 0 auto;
-    
+
 }
 
 .card {
@@ -288,6 +289,7 @@ footer a {
 	width: 85%;
 	margin-left: 15%;
     }
+
     .logo-area {
 	margin-top: 0;
     }
@@ -295,28 +297,32 @@ footer a {
     .logo {
 	flex-basis: 250px
     }
-    
+
     .logo img {
 	max-height: 224px;
     }
-    
+
     h1 {
 	font-size: 7em;
     }
+
     h3 {
 	font-size: 5em;
     }
+
     h4 {
 	font-size: 3.5em;
     }
+
     p {
 	font-size: 2em;
     }
-    
+
     .fas {
 	font-size: 4em;
 	text-align: center;
     }
+
     nav {
 	margin: 0;
 	padding: 0;
@@ -326,32 +332,40 @@ footer a {
 	width: 15%;
 	height: 100%;
     }
+
     nav .fas {
 	font-size: 4em;
 	display: block;
 	text-align: center;
 	justify-content: space-evenly;
     }
+
     nav a {
 	width: 75px;
 	height: 75px;
     }
+
     .break {
 	font-size: 2.5em;
     }
+
     section {
 	align-items: center;
     }
+
     section a {
 	font-size: 2.5em;
     }
+
     #about {
 	flex-direction: row;
     }
+
     #about .content {
 	margin: auto 5px;
 	max-height: 500px;
     }
+
     .profile-pic {
 	max-width: 42.5%;
 	max-height: 500px;
@@ -360,11 +374,13 @@ footer a {
     #about p {
 	font-size: 1.5em;
     }
+
     #about h3 {
 	background-color: var(--cream);
 	color: var(--pink);
 	width: 100%;
     }
+
     #education img {
 	max-width: 70%;
     }
@@ -379,23 +395,30 @@ footer a {
 	text-align: center;
 	background-color: var(--lightblue);
     }
+
     footer .fab {
 	color: var(--gray);
     }
+
     aside {
 	font-size: 2.25em;
     }
+
     ul {
 	font-size: 2em;
     }
+
     :target {
 	padding-top: 50px;
 	margin-top: -50px;
     }
 
 }
+
 /** DESKTOP STYLES **/
+
 @media screen and (min-width: 1024px) {
+
     nav {
 	margin: 15% 0;
 	padding: 1%;
@@ -406,20 +429,18 @@ footer a {
 	width: 10%;
 	height: 50%;
     }
-    
 
-    
     .nav-item .fas {
 	display: block;
 	margin: 0 auto;
 	font-size: 3em;
 	text-align: center;
     }
-    
+
     .logo-area, h3, footer, aside {
 	width: 100%;
     }
-     
+
     .logo-area {
 	display: flex;
 	margin-top: 0;
@@ -433,23 +454,28 @@ footer a {
 	width: 15%;
 	flex-basis: 100px;
     }
+
     .logo img {
 	max-width: 100%;
     }
+
     h1 {
 	line-height: 1;
 	font-size: 7em;
 	text-align: right;
     }
+
     section div, ul, p, a, .job {
 	width: 65%;
 	margin: 0 auto;
 	display: block;
     }
+
     .certificate, .card {
 	max-width: 25%;
 	margin: 2%  auto;
     }
+
     .content {
 	margin: auto 0;
     }
@@ -457,9 +483,11 @@ footer a {
     ul {
 	font-size: 1.5em;
     }
+
     p {
 	font-size: 1em;
     }
+
     #code p {
 	text-align: center;
     }
