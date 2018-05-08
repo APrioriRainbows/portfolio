@@ -423,8 +423,7 @@ footer a {
 @media screen and (min-width: 1023px) {
 /** TODO: make this flex-basis so that the icons grow with the container **/
     nav {
-	margin: 15% 0;
-	padding: 1%;
+	margin: 20% 0;
 	position: fixed;
 	flex-direction: column;
 	align-items: center;

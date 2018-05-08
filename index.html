@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Maria Caruso's Portfolio Page</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
@@ -9,14 +10,14 @@
   </head>
   <body class="flexy">
     <nav>
-      <a href="#about" class="nav-item"><i class="fas fa-question-circle" alt="about me"></i></a>      
-      <a href="#education" class="nav-item"><i class="fas fa-graduation-cap" alt="education"></i></a>
-      <a href="#experience" class="nav-item"><i class="fas fa-briefcase" alt="relevant experience"></i></a>
-      <a href="#code" class="nav-item"><i class="fas fa-code" alt="code snippets"></i></a>
+      <a href="#top" class="nav-item"><i class="fas fa-question-circle"></i></a>      
+      <a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i></a>
+      <a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i></a>
+      <a href="#code" class="nav-item"><i class="fas fa-code"></i></a>
     </nav>
-    <div class="logo-area">
+    <div class="logo-area" id="top">
       <div class="logo">
-	<img src="img/logo_final.png">
+	<img src="img/logo_final.png" alt="logo">
       </div>
       <h1>Maria Caruso</h1>
     </div>
@@ -35,7 +36,7 @@
     </section>
     <section id="education">
       <h3>Education</h3>
-	<img src="img/certificate_final.png" class="certificate" alt="vector skill icons">
+	<img src="img/certificate_final.png" class="certificate" alt="certificate">
 	<ul>
 	  <li><i class="far fa-star"></i>BA English, Philosophy - <em>Georgia State, 2009</em></li>
 	  <li><i class="far fa-star"></i>MA Philosophy - <em>Georgia State, 2013</em></li>
@@ -66,8 +67,8 @@
       <article class="code-example">
 	<h4>Pusheen Pixel Art Maker</h4>
 	<div class="card">
-	  <img src="img/ppam_final.png" class="code-image">
-	  <a href="https://codepen.io/a_priori_rainbows/pen/qowZMr/" class="button"  alt="pusheen pixel art maker">Demo</a>
+	  <img src="img/ppam_final.png" class="code-image" alt="pusheen pixel art maker">
+	  <a href="https://codepen.io/a_priori_rainbows/pen/qowZMr/" class="button">Demo</a>
 	</div>
 	<p>An interactive grid that users can color, or use a modular-based function to let Pusheen "paint" the grid for them.</p>
 	<p>Written in HTML, CSS, JS</p>
@@ -75,8 +76,8 @@
       <article class="code-example">
 	<h4>Animal Trading Card</h4>
 	<div class="card">
-	  <img src="img/animal_card_final.png" class="code-image">
-	  <a href="https://codepen.io/a_priori_rainbows/pen/wypPxw" class="button" alt="pusheen animal trading card">Demo</a> 
+	  <img src="img/animal_card_final.png" class="code-image" alt="pusheen animal trading card">
+	  <a href="https://codepen.io/a_priori_rainbows/pen/wypPxw" class="button">Demo</a> 
 	</div>
 	<p>An "animal trading card" made for Grow With Google.</p>
 	<p>Written in HTML, CSS</p>
@@ -86,5 +87,6 @@
       <a href="https://github.com/APrioriRainbows"><i class="fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/mariakcaruso/"><i class="fab fa-linkedin"></i></a>
       <a href="https://codepen.io/a_priori_rainbows/"><i class="fab fa-codepen"></i></a>
- </body>
+    </footer>
+  </body>
 </html>
