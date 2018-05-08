@@ -205,6 +205,11 @@ img {
     width: 100%;
 }
 
+#about h3 {
+    background-color: var(--cream);
+    color: var(--pink);
+}
+
 #code {
     padding-bottom: 0;
     display: flex;
@@ -284,7 +289,7 @@ footer a {
 /** MEDIA STYLES **/
 /** iPad (site is styled mobile-first already **/
 
-@media screen and (min-width: 760px) and (max-width: 1024px) {
+@media screen and (min-width: 760px) and (max-width: 1023px) {
     .logo-area, section {
 	width: 85%;
 	margin-left: 15%;
@@ -363,12 +368,10 @@ footer a {
 
     #about .content {
 	margin: auto 5px;
-	max-height: 500px;
     }
 
     .profile-pic {
 	max-width: 42.5%;
-	max-height: 500px;
     }
 
     #about p {
@@ -417,8 +420,8 @@ footer a {
 
 /** DESKTOP STYLES **/
 
-@media screen and (min-width: 1024px) {
-
+@media screen and (min-width: 1023px) {
+/** TODO: make this flex-basis so that the icons grow with the container **/
     nav {
 	margin: 15% 0;
 	padding: 1%;
@@ -426,7 +429,7 @@ footer a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-evenly;
-	width: 10%;
+	width: 8%;
 	height: 50%;
     }
 
@@ -466,10 +469,15 @@ footer a {
     }
 
     section div, ul, p, a, .job {
-	width: 65%;
+	width: 75%;
 	margin: 0 auto;
 	display: block;
     }
+
+    #about h3 {
+	background-color: var(--cream);
+	color: var(--pink);
+    }	
 
     .certificate, .card {
 	max-width: 25%;
@@ -485,7 +493,15 @@ footer a {
     }
 
     p {
-	font-size: 1em;
+	font-size: 1.5em;
+    }
+
+    h4 {
+	font-size: 2em;
+    }
+    
+    section a {
+	font-size: 1.5em;
     }
 
     #code p {
