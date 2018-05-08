@@ -183,7 +183,7 @@ nav {
 
 }
 .fa-star {
-    color: salmon;
+    color: var(--pink);
     font-size: 1em;
     margin-right: 5px;
 }
@@ -220,7 +220,7 @@ img {
 
 
 .code-example:nth-child(even){
-    border-bottom: pink solid 2px;
+    border-bottom: var(--pink) solid 2px;
 }
 
 
